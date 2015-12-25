@@ -10,6 +10,11 @@
 
 https://www.kaggle.com/c/digit-recognizer/
 score: 0.96300
+pred test
+time cost: 12311.181267s
+os:  windows 10
+CPU: AMD A6-4400M APU with Radeon(tm) Graphics 2.70GHz
+RAM: 6GB
 '''
 import numpy as np
 import time
