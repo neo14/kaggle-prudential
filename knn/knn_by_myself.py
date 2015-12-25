@@ -7,6 +7,9 @@
 @site: http://blog.yew1eb.net
 @contact: yew1eb@gmail.com
 @time: 2015/12/24 下午 9:59
+
+https://www.kaggle.com/c/digit-recognizer/
+score: 0.96300
 '''
 import numpy as np
 import time
@@ -38,8 +41,9 @@ def test_knn(train_data, train_label, test_data, test_label):
 
 def save2csv(labels, csv_name):
     f = open('d:/dataset/digits/' + csv_name, 'w')
-    for p in labels:
-        f.write(str(p))
+    f.write('ImageId,Label\n')
+    for i in range(1, len(labels)+1):
+        f.write(str(i)+','+str(labels[i]))
         f.write("\n")
     f.close()
 
